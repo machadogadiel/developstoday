@@ -2,7 +2,7 @@
 Hey There! 🙌 
 ```
 
-## 🌟 Introduction
+## Introduction
 
 Tech stack:
 
@@ -19,12 +19,12 @@ Tech stack:
 - Navigate: `cd backend` or `cd frontend`
 - Install dependencies: `pnpm install`
 
-#### Step 2: ⚙️ Environment Configuration
+#### Step 2: Environment Configuration
 
 - Create `.env`: Copy `.env.template` to `.env`
 - Update `.env`: Fill in necessary environment variables
 
-#### Step 3: 🏃‍♂️ Running the Project
+#### Step 3: Running the Project
 
 - Development Mode: `npm run dev`
 
