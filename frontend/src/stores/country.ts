@@ -29,7 +29,6 @@ const useCountryStore = create<Store>((set) => ({
 	country: null,
 	countries: [],
 	fetch_countries: async () => {
-		console.log(import.meta.env.VITE_API_URL);
 		const request = await fetch(`${import.meta.env.VITE_API_URL}/countries`);
 
 		const { response } = (await request.json()) as Record<string, unknown>;
