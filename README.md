@@ -4,8 +4,10 @@ Hey There! 🙌
 
 ## 🌟 Introduction
 
-Hello, I decided to make this project using expressJS using clean architecture in the backend, and frontend I went with simply React, TankStack Router and Zustand for state management
+Tech stack:
 
+- Backend: Node.js, Express.js
+- Frontend: React.js, Biome, ESLint, Prettier, Tailwind CSS, TanStack Router, Zustand, TypeScript
 
 ## 🛠️ Getting Started
 
@@ -25,6 +27,12 @@ Hello, I decided to make this project using expressJS using clean architecture i
 #### Step 3: 🏃‍♂️ Running the Project
 
 - Development Mode: `npm run dev`
+
+Backend
+- The routes for the required endpoints are: `/countries` and `/countries/:country`
+
+Frontend
+- There are only two pages: `/` and `/country/:country`
 
 (I didn't test production modes, since there will never be production for this project)
 
