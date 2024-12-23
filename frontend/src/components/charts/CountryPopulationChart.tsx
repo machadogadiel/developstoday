@@ -11,7 +11,6 @@ export default function CountryPopulationChart({
 	seriesData,
 }: Props): React.ReactElement {
 	const chartOptions = {
-		// Define your chart options here
 		chart: {
 			type: "line",
 		},

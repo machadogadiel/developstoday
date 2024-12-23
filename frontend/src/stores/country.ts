@@ -29,16 +29,15 @@ const useCountryStore = create<Store>((set) => ({
 	country: null,
 	countries: [],
 	fetch_countries: async () => {
-		// set((state) => ({ count_zustand: state.count_zustand - 1 })),
-		const request = await fetch("http://localhost:3000/countries");
+		console.log(import.meta.env.VITE_API_URL);
+		const request = await fetch(`${import.meta.env.VITE_API_URL}/countries`);
 
 		const { response } = (await request.json()) as Record<string, unknown>;
 
 		set({ countries: response as Country[] });
 	},
 	get_country: async (code: string) => {
-		// set((state) => ({ count_zustand: state.count_zustand - 1 })),
-		const request = await fetch(`http://localhost:3000/countries/${code}`);
+		const request = await fetch(`${import.meta.env.VITE_API_URL}/countries/${code}`);
 
 		const { response } = (await request.json()) as Record<string, unknown>;
 
